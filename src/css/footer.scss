@@ -1,0 +1,20 @@
+footer {
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 75px;
+    z-index: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    strong {
+      color: gray;
+    }
+    .footer-links {
+      z-index: 1000;
+      margin-bottom: 24px;
+      a {
+        margin: 0 8px;
+        color: gray;
+        text-decoration: none;
+      }
+    }
+  }

@@ -1,0 +1,72 @@
+/* Markdown içeriğinin genel görünümü */
+.markdown {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Başlık stilleri */
+.markdown h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.markdown h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.markdown h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraf stilleri */
+.markdown p {
+  margin-bottom: 15px;
+}
+
+/* Liste stilleri */
+.markdown ul,
+.markdown ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+/* Link stilleri */
+.markdown a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Kalın ve italik stilleri */
+.markdown strong {
+  font-weight: bold;
+}
+
+.markdown em {
+  font-style: italic;
+}
+
+/* Resm stilleri */
+.markdown img {
+  border-radius: 5px;
+  max-width: 75%;
+  height: auto;
+}
+
+
+/* Kod bloğu stilleri */
+.markdown pre {
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
