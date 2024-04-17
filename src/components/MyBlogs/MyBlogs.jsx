@@ -5,7 +5,7 @@ import { useGetAuthTokenQuery } from '../../store';
 import { Container, Grid } from '@mui/material';
 import MyBlogsCarts from './MyBlogsCarts';
 import MyBlogEmpty from './MyBlogEmpty';
-import SearchInput from '../SearchInput'; // SearchInput bileşenini ekleyin
+import SearchInput from '../SearchInput'; 
 
 function MyBlogs() {
   const dispatch = useDispatch();
@@ -36,32 +36,34 @@ function MyBlogs() {
 
   return (
     <Container sx={{ paddingTop: 10 }}>
-      {/* SearchInput bileşenini ekleyin */}
-      <SearchInput onChange={handleSearch} placeholder="Search..." />
-      <Grid container spacing={2}>
-        {userHasBlogVerification &&
-          (filteredBlogs.length > 0 ? (
-            filteredBlogs.map((blog) => {
-              const blogData = JSON.parse(blog.content);
-              return (
-                <MyBlogsCarts
-                  key={blog.id}
-                  id={blog.id}
-                  Like={blog.Like}
-                  title={blogData.title}
-                  name={blogData.name}
-                  body={blogData.body}
-                  Image={blogData.imageUrl}
-                  userId={blogData.userId}
-                  userAvatar={blogData.userAvatar}
-                />
-              );
-            })
-          ) : (
-            <MyBlogEmpty />
-          ))}
-      </Grid>
-    </Container>
+    <SearchInput onChange={handleSearch} placeholder="Search..."/>
+    <Grid container spacing={2}>
+      {userHasBlogVerification ? (
+        filteredBlogs.length > 0 ? (
+          filteredBlogs.map((blog) => {
+            const blogData = JSON.parse(blog.content);
+            return (
+              <MyBlogsCarts
+                key={blog.id}
+                id={blog.id}
+                Like={blog.Like}
+                title={blogData.title}
+                name={blogData.name}
+                body={blogData.body}
+                Image={blogData.imageUrl}
+                userId={blogData.userId}
+                userAvatar={blogData.userAvatar}
+              />
+            );
+          })
+        ) : (
+          <MyBlogEmpty />
+        )
+      ) : (
+        <MyBlogEmpty />
+      )}
+    </Grid>
+  </Container>
   );
 }
 

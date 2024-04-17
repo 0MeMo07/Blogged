@@ -11,7 +11,9 @@ const SearchInput = ({ onChange, placeholder }) => {
   };
 
   return (
+    
     <TextField
+      className='Search'
       fullWidth
       variant="standard"
       placeholder={placeholder}
@@ -23,7 +25,7 @@ const SearchInput = ({ onChange, placeholder }) => {
             <RiSearchLine style={{ color: '#757575' }} />
           </InputAdornment>
         ),
-        style: { marginBottom: '10px' },
+        style: { marginBottom: '10px', color: '#757575' },
       }}
     />
   );

@@ -17,6 +17,7 @@ const DarkMode = () => {
         document.body.style.backgroundColor = darkMode ? '#212121' : '#f2f2f2';
         document.body.style.color = darkMode ? '#ffffff' : '#212121';
 
+
         if(document.querySelector('.BlogPrewiew')){
             document.querySelector('.BlogPrewiew').classList.add('body-transition');
             document.querySelector('.BlogPrewiew').style.color = darkMode ? '#ffffff' : '#212121';

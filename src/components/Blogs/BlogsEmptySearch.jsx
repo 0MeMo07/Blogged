@@ -36,7 +36,8 @@ function MyBlogEmpty() {
               Blogs are empty
             </Typography>
             <Typography variant="body1" gutterBottom>
-              There doesn't seem to be any blog to display. Start sharing your thoughts and experiences by adding a new blog. Be the first to add a blog
+              {/* There doesn't seem to be any blog to display. Start sharing your thoughts and experiences by adding a new blog. Be the first to add a blog */}
+              There doesn't seem to be any blogs, how about adding one?
             </Typography>
             {error
             ?

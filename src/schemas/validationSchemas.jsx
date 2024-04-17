@@ -15,3 +15,8 @@ export const AddBlogSchema = Yup.object().shape({
   newBlogContent: Yup.string()
     .required('Content is required')
 });
+
+export const SearchInputSchema = Yup.object().shape({
+  otherField: Yup.string()
+    .max(50, 'Other field must be at most 50 characters'),
+});

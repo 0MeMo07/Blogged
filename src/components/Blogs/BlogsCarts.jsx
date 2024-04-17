@@ -20,7 +20,7 @@ function Blogs({id, title, name, body, Image, userId, userAvatar, Like}) {
   const [isLiked, setIsLiked] = useState(false);
 
   useEffect(() => {
-    if (!isLoading && Like && AuthData && AuthData.id) {
+    if (!isLoading && Like) {
       setIsLiked(Like.includes(AuthData.id));
     }
   }, [isLoading, Like, AuthData]);
