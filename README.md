@@ -34,5 +34,5 @@ The project uses a dummy JSON API for fetching and managing data. This API provi
 
 1. **Requirements:** Make sure you have Node.js installed to run the project.
 2. **Installation:** Navigate to the project directory and run `npm install`.
-3. **Run:** Start the project with `npm start` command. By default, the application runs at `localhost:5173`.
+3. **Run:** Start the project with `npm run dev` command. By default, the application runs at `localhost:5173`.
 4. **Browser:** Go to `localhost:5173` in your browser and access Blogged.
