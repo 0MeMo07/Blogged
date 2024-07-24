@@ -36,3 +36,8 @@ The project uses a dummy JSON API for fetching and managing data. This API provi
 2. **Installation:** Navigate to the project directory and run `npm install`.
 3. **Run:** Start the project with `npm run dev` command. By default, the application runs at `localhost:5173`.
 4. **Browser:** Go to `localhost:5173` in your browser and access Blogged.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=0MeMo07/Blogged&type=Timeline)](https://star-history.com/#0MeMo07/Blogged&Timeline)
+
